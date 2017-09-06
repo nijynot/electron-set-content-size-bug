@@ -1,0 +1,17 @@
+html {
+  background-color: #24292e;
+  height: 100%;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+img {
+  vertical-align: top;
+}
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  background: transparent;
+}

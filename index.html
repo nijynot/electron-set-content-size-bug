@@ -3,17 +3,20 @@
   <head>
     <meta charset="UTF-8">
     <title>Hello World!</title>
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
+    <link rel="stylesheet" type="text/css" href="./style.css">
   </head>
   <body>
-    <h1>Hello World!</h1>
-    <!-- All of the Node.js APIs are available in this renderer process. -->
+    <!-- <h1>Hello World!</h1>
+    All of the Node.js APIs are available in this renderer process.
     We are using Node.js <script>document.write(process.versions.node)</script>,
     Chromium <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
+    and Electron <script>document.write(process.versions.electron)</script>. -->
+    <img id="image" src="./akko.jpg"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.js" onload="window.$ = window.jQuery = module.exports;"></script>
+    <script>
+      // You can also require other files to run in this process
+      require('./renderer.js')
+    </script>
   </body>
-
-  <script>
-    // You can also require other files to run in this process
-    require('./renderer.js')
-  </script>
 </html>
